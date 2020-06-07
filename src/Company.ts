@@ -8,6 +8,7 @@ export class Company implements Mappable {
     lat: number;
     lng: number;
   };
+  icon: string = "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png";
 
   constructor() {
     this.companyName = faker.company.companyName();
@@ -17,6 +18,7 @@ export class Company implements Mappable {
       lng: parseFloat(faker.address.longitude()),
     };
   }
+
   markerContent(): string {
     return `
       <div>

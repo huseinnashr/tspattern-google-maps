@@ -4,4 +4,5 @@ export interface Mappable {
     lng: number;
   };
   markerContent(): string;
+  icon: string;
 }

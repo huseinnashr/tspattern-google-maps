@@ -20,6 +20,7 @@ export class CustomMap {
         lat: mappable.location.lat,
         lng: mappable.location.lng,
       },
+      icon: mappable.icon,
     });
 
     marker.addListener("click", () => {

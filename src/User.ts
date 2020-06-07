@@ -7,6 +7,7 @@ export class User implements Mappable {
     lat: number;
     lng: number;
   };
+  icon: string = "http://maps.google.com/mapfiles/ms/icons/green-dot.png";
 
   constructor() {
     this.name = faker.name.firstName();
